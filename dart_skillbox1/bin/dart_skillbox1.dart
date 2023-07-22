@@ -1,14 +1,14 @@
-import 'package:dart_skillbox1/src/(4)mapint.dart';
-import 'package:dart_skillbox1/src/(5)conovStrToInt.dart';
-import 'package:dart_skillbox1/src/(7)koren.dart';
-import 'package:dart_skillbox1/src/(2)to_binary.dart';
-import 'package:dart_skillbox1/src/(6)point.dart';
-import 'package:dart_skillbox1/src/(8)user.dart';
-import 'package:dart_skillbox1/src/(1)gcd&lcm.dart';
-import 'package:dart_skillbox1/src/(3)toNum.dart';
+import 'package:dart_skillbox1/src/ReturnMup(String,%20Int).dart';
+import 'package:dart_skillbox1/src/ConvertStrToInt.dart';
+import 'package:dart_skillbox1/src/RootAlgorithm.dart';
+import 'package:dart_skillbox1/src/ToBinaryToDecimal.dart';
+import 'package:dart_skillbox1/src/ClassPoint.dart';
+import 'package:dart_skillbox1/src/ClassUser.dart';
+import 'package:dart_skillbox1/src/gcd&lcm.dart';
+import 'package:dart_skillbox1/src/ReturnNumbers.dart';
 
 void main() {
-  var gl = gcdlcm(12, 25);
+  var gl = gcdlcm(12, 36);
   print('gcd=${gl.gcd(gl.a, gl.b)} lcm=${gl.lcm()}');
 
   String a = toBinary(35);
@@ -17,13 +17,13 @@ void main() {
   int x = toDecimal([100011]);
   print('to decimal= $x');
 
-  List<String> str3 = ['1w2w3e4' '5j6k7l8' '9rf10got11'];
-  print(returnNum(str3));
+  List<String> str = ['1w2w3e4' '5j6k7l8' '9rf10got11'];
+  print(returnNumbers(str));
 
   List<String> names = ['Tom', 'Tom', 'Max', 'Sam', 'Sam', 'Sam'];
-  print(tomup(names));
+  print(returnMup(names));
 
-  List<String> str = [
+  List<String> str2 = [
     'one',
     'two',
     'three',
@@ -37,7 +37,7 @@ void main() {
     'zero',
     'green'
   ];
-  print(conovStrtoInt(str));
+  print(ConvertStrToInt(str2));
 
   var p = Point(5, 6, 9);
   var p2 = Point(12, 15, 23);

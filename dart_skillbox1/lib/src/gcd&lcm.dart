@@ -4,7 +4,7 @@ class gcdlcm {
 
   gcdlcm(this.a, this.b);
 
-  gcd(a, b) {
+  int gcd(a, b) {
     while (a != b) {
       if (a > b) {
         a -= b;
@@ -15,7 +15,7 @@ class gcdlcm {
     return a;
   }
 
-  lcm() {
+  int lcm() {
     int lcm = a * b ~/ gcd(a, b);
     return lcm;
   }

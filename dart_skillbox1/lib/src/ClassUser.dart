@@ -37,11 +37,11 @@ class UserManager<T extends User> {
   List<T> userList;
   UserManager(this.userList);
 
-  addUser(User) {
+  void addUser(User) {
     userList.add(User);
   }
 
-  removeUserByEmail(String email) {
+  void removeUserByEmail(String email) {
     userList.removeWhere((userList) => userList.email == email);
   }
 

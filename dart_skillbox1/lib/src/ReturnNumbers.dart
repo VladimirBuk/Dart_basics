@@ -1,6 +1,7 @@
-returnNum(List<String> str0) {
+num returnNumbers(List<String> inputData) {
   RegExp exp = RegExp(r"[^0-9]+");
-  String str = str0.toString();
+  String str = inputData.toString();
   String res = str.replaceAll(exp, '');
-  return ('числа:$res');
+  int result = int.parse(res);
+  return result;
 }

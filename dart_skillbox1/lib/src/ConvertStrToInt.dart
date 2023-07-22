@@ -1,4 +1,4 @@
-conovStrtoInt(List<String> str) {
+List ConvertStrToInt(List<String> str) {
   var numbers = [];
   for (String element in str) {
     if (cst(element) != -1) {

@@ -1,4 +1,4 @@
-ReturnMup(List<String> n) {
+Map returnMup(List<String> n) {
   Map nmap = {};
   for (String element in n) {
     if (nmap.containsKey(element)) {
