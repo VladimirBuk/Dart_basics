@@ -9,7 +9,7 @@ List ConvertStrToInt(List<String> str) {
   return numbers.toSet().toList();
 }
 
-cst(String str2) {
+int cst(String str2) {
   var List = [
     'zero',
     'one',
