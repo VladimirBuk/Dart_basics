@@ -1,5 +1,4 @@
 import 'package:dart_skillbox1/src/(4)mapint.dart';
-import 'package:dart_skillbox1/src/(5).dart';
 import 'package:dart_skillbox1/src/(5)conovStrToInt.dart';
 import 'package:dart_skillbox1/src/(7)koren.dart';
 import 'package:dart_skillbox1/src/(2)to_binary.dart';
@@ -9,17 +8,20 @@ import 'package:dart_skillbox1/src/(1)gcd&lcm.dart';
 import 'package:dart_skillbox1/src/(3)toNum.dart';
 
 void main() {
-  var gl = gcdlcm(12, 25); //1
+  var gl = gcdlcm(12, 25);
   print('gcd=${gl.gcd(gl.a, gl.b)} lcm=${gl.lcm()}');
 
-  String a = toBinary(35); //2
+  String a = toBinary(35);
   print('to binary= $a');
 
-  int x = toDecimal([100011]); //2
+  int x = toDecimal([100011]);
   print('to decimal= $x');
 
-  toNum(); //3
-  mup(); //4
+  List<String> str3 = ['1w2w3e4' '5j6k7l8' '9rf10got11'];
+  print(returnNum(str3));
+
+  List<String> names = ['Tom', 'Tom', 'Max', 'Sam', 'Sam', 'Sam'];
+  print(tomup(names));
 
   List<String> str = [
     'one',
@@ -35,15 +37,8 @@ void main() {
     'zero',
     'green'
   ];
-  /*var numbers = [];
-  for (String elem in str2) {
-    if (conovStrToInt(elem) != -1) {
-      numbers.add(conovStrToInt(elem));
-    }
-  }
-  numbers = numbers.toSet().toList();
-  print(numbers);*/
   print(conovStrtoInt(str));
+
   var p = Point(5, 6, 9);
   var p2 = Point(12, 15, 23);
   print('distanse to: ${p.distanceTo(p2)}');
