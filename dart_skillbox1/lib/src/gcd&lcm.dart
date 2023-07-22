@@ -2,7 +2,7 @@ class gcdlcm {
   int a;
   int b;
 
-  gcdlcm(this.a, this.b);
+int gcdlcm(this.a, this.b);
 
   int gcd(a, b) {
     while (a != b) {
