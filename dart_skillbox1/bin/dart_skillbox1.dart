@@ -1,24 +1,24 @@
-import 'package:dart_skillbox1/src/ReturnMup(String,%20Int).dart';
-import 'package:dart_skillbox1/src/ConvertStrToInt.dart';
-import 'package:dart_skillbox1/src/RootAlgorithm.dart';
-import 'package:dart_skillbox1/src/ToBinaryToDecimal.dart';
-import 'package:dart_skillbox1/src/ClassPoint.dart';
-import 'package:dart_skillbox1/src/ClassUser.dart';
-import 'package:dart_skillbox1/src/gcd&lcm.dart';
-import 'package:dart_skillbox1/src/ReturnNumbers.dart';
+import 'package:dart_skillbox1/src/mapper.dart';
+import 'package:dart_skillbox1/src/num_parser_2.dart';
+import 'package:dart_skillbox1/src/sqrt_calculator.dart';
+import 'package:dart_skillbox1/src/bin_coder.dart';
+import 'package:dart_skillbox1/src/point.dart';
+import 'package:dart_skillbox1/src/user_manager.dart';
+import 'package:dart_skillbox1/src/delemeters_calculator.dart';
+import 'package:dart_skillbox1/src/num_parser.dart';
 
 void main() {
-  var gl = gcdlcm(12, 36);
+  var gl = DelementersCalculator(12, 36);
   print('gcd=${gl.gcd(gl.a, gl.b)} lcm=${gl.lcm()}');
 
-  String a = toBinary(35);
+  String a = toBinary(24);
   print('to binary= $a');
 
-  int x = toDecimal([100011]);
+  int x = toDecimal([11000]);
   print('to decimal= $x');
 
   List<String> str = ['1w2w3e4' '5j6k7l8' '9rf10got11'];
-  print(returnNumbers(str));
+  print(numParser(str));
 
   List<String> names = ['Tom', 'Tom', 'Max', 'Sam', 'Sam', 'Sam'];
   print(returnMup(names));
@@ -57,6 +57,6 @@ void main() {
   print(um.userList);
   print(um.getEmail());
 
-  num s = -2;
+  num s = -6;
   print(s.nSqrt(2));
 }
