@@ -1,6 +1,6 @@
-List ConvertStrToInt(List<String> str) {
+List ConvertStrToInt<T>(T) {
   var numbers = [];
-  for (String element in str) {
+  for (String element in T) {
     if (cst(element) != -1) {
       numbers.add(cst(element));
     }
