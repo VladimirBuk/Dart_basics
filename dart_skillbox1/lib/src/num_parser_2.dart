@@ -1,5 +1,5 @@
-List ConvertStrToInt<T>(T) {
-  var numbers = [];
+List<int> ConvertStrToInt<T>(T) {
+  List<int> numbers = [];
   for (String element in T) {
     if (cst(element) != -1) {
       numbers.add(cst(element));
