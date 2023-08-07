@@ -1,5 +1,5 @@
 Map<String, int> returnMup(List<String> n) {
-  Map nmap = <String, int>{};
+  Map nmap = {};
   for (String element in n) {
     if (nmap.containsKey(element)) {
       nmap[element] += 1;
@@ -7,5 +7,5 @@ Map<String, int> returnMup(List<String> n) {
       nmap[element] = 1;
     }
   }
-  return nmap;
+  return nmap.cast();
 }
