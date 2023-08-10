@@ -7,5 +7,5 @@ Map<String, int> returnMup(List<String> n) {
       nmap[element] = 1;
     }
   }
-  return nmap.cast();
+  return nmap.map((key, value) => MapEntry(key.toString(), value.toInt()));
 }
